@@ -1,0 +1,60 @@
+[
+  {
+    "id": "normal_seoul_1995",
+    "input": {
+      "calendarType": "solar",
+      "birthDate": "1995-05-12",
+      "birthTime": "14:30",
+      "isLeapMonth": false,
+      "gender": "female",
+      "location": {
+        "city": "서울",
+        "country": "대한민국",
+        "latitude": 37.5665,
+        "longitude": 126.978,
+        "timezone": "Asia/Seoul"
+      },
+      "solarTimeEnabled": false,
+      "dayBoundaryPolicy": "midnight"
+    }
+  },
+  {
+    "id": "unknown_time",
+    "input": {
+      "calendarType": "solar",
+      "birthDate": "1990-01-01",
+      "birthTime": "unknown",
+      "isLeapMonth": false,
+      "gender": "male",
+      "location": {
+        "city": "서울",
+        "country": "대한민국",
+        "latitude": 37.5665,
+        "longitude": 126.978,
+        "timezone": "Asia/Seoul"
+      },
+      "solarTimeEnabled": false,
+      "dayBoundaryPolicy": "midnight"
+    },
+    "expect": { "hourNull": true }
+  },
+  {
+    "id": "lichun_boundary",
+    "input": {
+      "calendarType": "solar",
+      "birthDate": "2026-02-03",
+      "birthTime": "04:00",
+      "isLeapMonth": false,
+      "gender": "female",
+      "location": {
+        "city": "서울",
+        "country": "대한민국",
+        "latitude": 37.5665,
+        "longitude": 126.978,
+        "timezone": "Asia/Seoul"
+      },
+      "solarTimeEnabled": false,
+      "dayBoundaryPolicy": "midnight"
+    }
+  }
+]

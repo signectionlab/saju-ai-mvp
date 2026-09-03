@@ -1,0 +1,16 @@
+{
+  "engine_version": "manse-v1.0.0",
+  "school_policy": "project-standard-v1",
+  "year_boundary": "lichun",
+  "month_boundary": "12-jie",
+  "day_boundary": "midnight",
+  "time_correction": "local_mean_solar_time",
+  "solar_time_option": true,
+  "unknown_birth_time": "omit-hour-pillar",
+  "yongsin": "disabled",
+  "luck_direction": "year-stem-and-gender",
+  "luck_start": "exact-term-gap-divided-by-3",
+  "supported_year_minimum": 1900,
+  "supported_year_maximum": 2100,
+  "strength_model": "project-standard-v1"
+}

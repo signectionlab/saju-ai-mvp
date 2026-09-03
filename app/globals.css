@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #08080c;
+  --color-surface: #12101a;
+  --color-subtle: #1a1624;
+  --color-text-primary: #f5f0e8;
+  --color-text-secondary: #a89fb8;
+  --color-border: #2a2438;
+  --color-brand: #9a8868;
+  --color-brand-deep: #7a6b52;
+  --color-accent: #6b5a48;
+  --color-accent-soft: #1f1a14;
+  --color-focus: #9a8868;
+  --color-danger: #e05a5a;
+  --color-warning: #d4a017;
+  --color-advisor-hyeon: #7eb0e8;
+  --color-advisor-hyeon-soft: #1a2438;
+  --color-advisor-on: #e8a090;
+  --color-advisor-on-soft: #2a1818;
+  --color-element-wood: #6bbf8a;
+  --color-element-fire: #e85d4c;
+  --color-element-earth: #c9a227;
+  --color-element-metal: #94a3b8;
+  --color-element-water: #60a5fa;
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-serif: "Noto Serif KR", "Nanum Myeongjo", Georgia, serif;
+  --radius-card: 16px;
+  --radius-card-hyeon: 10px;
+  --radius-card-on: 20px;
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-text-primary antialiased;
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-serif);
+    color: var(--color-brand);
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
